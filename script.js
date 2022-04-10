@@ -14,7 +14,7 @@ let numeroInteiro = 100;
 let numedoDecimal = 5.38;
 let numeroNegativo = -200.99;
 
-// Tipos de dados - NUMBER
+// Tipos de dados - STRING
 // São valores de texto, normalmente chamados de "cadeia de caracteres":
 
 let ola1 = "Olá Mundo";
@@ -37,3 +37,20 @@ let olaMundo = ola2+mundo;
 let ola3 = "Olá";
 let mundo1 = "Mundo";
 let olaMundo1 = ola.concat(mundo);
+
+// Tipos de dados - BOOLEANO
+// São tipos de daods que possuem dois valores: TRUE ou FALSE
+
+let verdadeiro = true;
+let falso = false;
+
+let comparacao = 1 == 1; // TRUE
+let comparacao2 = 1 > 5; // FALSE
+let comparacaoString = "banana" == "banana"; // TRUE
+
+/*
+    Se testar 1 == "1", obterá true. Para comparações que levam em consideração o valor e o tipo de dado, deverá ser utilizado ===
+*/
+
+console.log(1 == "1"); // TRUE
+console.log(1 === "1"); // FALSE

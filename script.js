@@ -54,3 +54,24 @@ let comparacaoString = "banana" == "banana"; // TRUE
 
 console.log(1 == "1"); // TRUE
 console.log(1 === "1"); // FALSE
+
+// Tipos de dados - ARRAY (vetor)
+// É uma lista ou coleções de dados que pode ser acessada por índice. 
+let vetor = [];
+
+// Criando um vetor e atribuindo valores separados por vírgula.
+let vetor2 = [1, 22, 0, 100];
+
+// Adicionando valores de qualquer tipo no vetor
+let vetor3 = [1, "Olá Mundo", true, [1, 2, 3]];
+
+// Os valores podem ser acessador através de seu índice
+let vetor4 = [1, 2, 3, 4];
+console.log(vetor4[1]); // exibirá 22
+
+// Alterando e atribuindo valores pelo índice
+let vetor5 = [8, 4, 3, 10, 78];
+// Altera o valor da primeira posição
+vetor5[0] = 9000;
+// Insere um valor após o último elemento
+vetor5[5] = 7;

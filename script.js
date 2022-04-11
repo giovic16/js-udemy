@@ -2,10 +2,10 @@ console.log("Olá Mundo!");
 
 var umNumero; // Por questão de boas práticas o var já não é mais tão utilizado
 var umNumero = 10; // Declara uma variável podendo atribuir um valor junto na sua criação
-
 let outroNumero = 5; // Declara uma variável com escopo de bloco
-
 const ola = "Olá Mundo!"; // Declara uma variável apenas para leitura. Após atribuir um valor, não será possível altera-lo
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //
 
 // Tipos de dados - NUMBER
 // São todos os números reais que aprendemos nas aulas de matemática
@@ -13,6 +13,8 @@ const ola = "Olá Mundo!"; // Declara uma variável apenas para leitura. Após a
 let numeroInteiro = 100;
 let numedoDecimal = 5.38;
 let numeroNegativo = -200.99;
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //
 
 // Tipos de dados - STRING
 // São valores de texto, normalmente chamados de "cadeia de caracteres":
@@ -38,6 +40,8 @@ let ola3 = "Olá";
 let mundo1 = "Mundo";
 let olaMundo1 = ola.concat(mundo);
 
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
 // Tipos de dados - BOOLEANO
 // São tipos de daods que possuem dois valores: TRUE ou FALSE
 
@@ -55,6 +59,8 @@ let comparacaoString = "banana" == "banana"; // TRUE
 console.log(1 == "1"); // TRUE
 console.log(1 === "1"); // FALSE
 
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
 // Tipos de dados - ARRAY (vetor)
 // É uma lista ou coleções de dados que pode ser acessada por índice. 
 let vetor = [];
@@ -67,7 +73,7 @@ let vetor3 = [1, "Olá Mundo", true, [1, 2, 3]];
 
 // Os valores podem ser acessador através de seu índice
 let vetor4 = [1, 2, 3, 4];
-console.log(vetor4[1]); // exibirá 22
+console.log(vetor4[1]); // exibirá 2
 
 // Alterando e atribuindo valores pelo índice
 let vetor5 = [8, 4, 3, 10, 78];
@@ -75,3 +81,20 @@ let vetor5 = [8, 4, 3, 10, 78];
 vetor5[0] = 9000;
 // Insere um valor após o último elemento
 vetor5[5] = 7;
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+// Tipos de dados - NULL e UNDEFINED
+// O Null é um tipo de dado especial, ele representa a falta de valor de qualquer outro tipo de dado
+
+let x = null;
+let y = 1;
+y = null;
+
+// O Undefined aparece quando criamos uma variável e tentamos acessar seu valor antes de ter algo atribuído a ela.
+let a;
+console.log(a); // retorno de undefined
+
+// Undefined !== Null
+console.log(null === undefined);
+// Isso ocorre pois null ainda é um valor e undefined é quando o JavaScript não sabe qual o tipo de dado

@@ -127,3 +127,40 @@ carro3["portas"] = 2;
 // Para alterar os dados, funciona da mesma forma
 carro3.portas = 4;
 carro3["portas"] = 4;
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+// Tipos de dados - FUNÇÕES
+// As funções são utilizadas para criar uma sequência de operações e serem executadas
+
+let oiUsuario = function(){
+    console.log("Oi usuário");
+    console.log("Oi usuário novamente");
+    console.log("Oi usuário mais uma vez");
+}
+oiUsuario(); // Para a função ser executada, é necessário utlizar os ()
+
+// Outra forma de criar uma função é chamando o function com o nome dela
+function oiUsuario(){
+    console.log("Oi usuário");
+    console.log("Oi usuário novamente");
+    console.log("Oi usuário mais uma vez");
+}
+oiUsuario();
+
+// Também é possível passar valores para a função acessar
+let somar = function(valor1, valor2) {
+    let resultado = valor1 + valor2;
+    console.log(resultado);
+  }
+  somar(1,2);
+  somar(4,4);
+  somar(99,1);
+//somar();
+
+// Comando return
+
+let soma = function(numero1, numero2){
+    let resultado2 = numero1 + numero2;
+    return resultado2;
+}

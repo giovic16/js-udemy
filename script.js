@@ -98,3 +98,32 @@ console.log(a); // retorno de undefined
 // Undefined !== Null
 console.log(null === undefined);
 // Isso ocorre pois null ainda é um valor e undefined é quando o JavaScript não sabe qual o tipo de dado
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+// Tipos de dados - OBJETO
+// É um tipo de dado composto pelos outros tipos. Com ele, podemos oganizar informações relacionadas em uma variável
+
+let carro = {
+    rodas: 4,
+    portas: 2,
+    nome: "um carro",
+    aVenda: true
+};
+
+// Criação de um objeto vazio
+let carro2 = {};
+// Objeto com propriedades (variáveis)
+let carro3 = {
+    rodas: 4,
+    nome: "Carro"
+};
+
+// Caso já tenha criado um objeto e queira adicionar uma nova propriedade
+carro3.portas = 2;
+carro3["portas"] = 2;
+// Se utilizar a segunda opção, é necessário ter uma string dentro dos []
+
+// Para alterar os dados, funciona da mesma forma
+carro3.portas = 4;
+carro3["portas"] = 4;

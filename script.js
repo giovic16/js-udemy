@@ -164,3 +164,42 @@ let soma = function(numero1, numero2){
     let resultado2 = numero1 + numero2;
     return resultado2;
 }
+
+// Condicionais - If e Else
+// O if (se) é um comando que permite executar um código apenas se uma condição entre parênteses for verdadeira (true) 
+
+let num = 1;
+if(num == 1){
+    // Executa o código
+}
+
+let disponivel = true;
+let quantidade = 5;
+
+//SE quantidade for MAIOR QUE 0 E disponivel
+if(quantidade > 0 && disponivel){
+    console.log("Poduto disponivel para venda");
+}
+
+// O comando else (senão) serve para executarmos um trecho de código quando IF for falso
+
+if(nome2 == "Maria"){
+    console.log("Acesso permitido")
+}else{
+    console.log("Acesso negado")
+}
+
+// Para criar mais condições, utilize o else if
+// SE cidade for IGUAL a Porto Alegre
+if(cidade == "Porto Alegre"){
+    //Código
+// SENÃO SE cidade for IGUAL a São Paulo
+}else if(cidade == "São Paulo"){
+    //Código
+// SENÃO SE cidade for IGUAL a São Paulo
+}else if(cidade == "Rio de Janeiro"){
+    //Código
+// SENÃO
+}else{
+    //Cógiddo
+}

@@ -249,3 +249,18 @@ console.log(num4);
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------- //
 
+// Condicionais - Switch
+// O switch serve para executar um código de acordo com diversos resultados possiveis
+// Sendo uma alternativa perfeira ao if/else caso existam muitas comparações de um valor
+switch (codigo) {
+    case 50: // Case - para cada possibilidade, é necessário termos um "case" (caso)
+        console.log("Banana");
+        break; // Break - serve para encerrar a leitura do switch. Sem ele o código do case abaixo será executado
+    case 9540:
+        console.log("Limão");
+        break;
+    default: // Executará quando nenhum case corresponder ao valor
+        console.log("Desconhecido");
+        break;
+}
+

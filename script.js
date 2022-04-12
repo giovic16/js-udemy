@@ -165,6 +165,8 @@ let soma = function(numero1, numero2){
     return resultado2;
 }
 
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
 // Condicionais - If e Else
 // O if (se) é um comando que permite executar um código apenas se uma condição entre parênteses for verdadeira (true) 
 
@@ -203,3 +205,47 @@ if(cidade == "Porto Alegre"){
 }else{
     //Cógiddo
 }
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+// Condicionais - Escopo
+// O bloco de escopo é definido pela região ao qual variáveis e outros dados são visíveis
+
+let num2 = 1;
+
+if(num2 == 1){
+    let texto = "Olá";
+    // Acessando a variável número
+    num2 = 2;
+}
+
+// Caso tente acessar a variável "texto" fora do if, terá um erro de escopo
+console.log(texto);
+
+// Escopo global - Uma variável declarada fora de uma função, torna-se global e todos os scripts e funções em uma página da web podem acessá-la
+// Nesse caso, tentar acessar uma variável fora da função, terá erros
+
+// Escopo de bloco - Variáveis declaradas dentro de um local cercado por {}
+
+let varGlobal = 1;
+function funcaoGlobal(){
+    let varFuncao = varGlobal + 1;
+    
+    function funcaoGlobal(){
+        let varFuncLocal = varFuncao + varGlobal;
+        console.log(varFuncLocal);
+    }
+}
+// Essas variáveis não podem ser acessadas fora de seu escopo
+
+// VAR - O var só possui escopo global e de bloco para funções
+
+let num3 = 1;
+
+if(num3 == 1){
+    var num4 = 99; // O exemplo com VAR exibirá o valor, caso seja substituido por LET, causará erro devido ao escopo
+}
+console.log(num4);
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //
+

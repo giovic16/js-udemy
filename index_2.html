@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript Udemy 2</title>
+</head>
+<body>
+    <script>
+         // Exercício 4
+         let simbolo1 = "R$";
+        let simbolo2 = "$";
+        let simbolo3 = "€";
+
+        // Escreva a função que receberá um simbolo de moeda
+        // como parametro e retornara o nome dela caso conheça aquele simbolo
+        // senão, retornar "moeda não encontrada"
+
+        function moeda(simbolo){
+            switch (simbolo) {
+                case "R$":
+                    console.log("Real");
+                    break;
+                case "$":
+                    console.log("Dolar");
+                    break;
+                case "€":
+                    console.log("Euro");
+                    break;
+                default:
+                    console.log("Moeda não encontrada");
+                    break;
+            }
+        }
+
+        // --------------------------------------- //
+
+        let objetoServidor = {
+            acesso: true,
+            login: "mundojs",
+        };
+
+        let objetoServidor2 = {
+            erro: "Erro ao conectar ao servidor",
+        }
+
+        // Caso o objeto não contenha erro, confira se o acesso é permitido
+        // Se for permitido exiba "Login: mundojs"
+        // Senão escreva "Acesso negado"
+        // Caso de erro exiba a mensagem de erro
+
+        function conexaoLogin(respostaDoServidor) {
+            if (respostaDoServidor.erro == null){
+                console.log(login);
+                if(respostaDoServidor.acesso){
+                    console.log('login: ${respostaDoServidor.login}');
+                }else{
+                    console.log("Acesso negado");
+                }
+            }else{
+                console.log(respostaDoServidor.erro);
+            }
+        }
+    </script>
+</body>
+</html>

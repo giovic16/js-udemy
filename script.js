@@ -299,3 +299,16 @@ for(let i = 0; i < valores2.length; i++){
     console.log(valores2[i]);
 }
 // O código acima imprime os números de 2 em 2, ex: 2, 4, 6, 8, 10...
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+// Loops - For of
+// Esse loop é especifico para percorrer os elementos de uma lista
+
+let dias = ["segunda", "terça", "quarta", "quinta", "sexta"];
+for(let dia of dias){
+    console.log(dia); 
+}
+// O código acima imprime todos os dias da semana dentro da lista "dias".
+
+// Caso trabalhe com índices ou múltiplas posições da lista, utilize apenas o FOR.

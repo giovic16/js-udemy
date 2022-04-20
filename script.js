@@ -312,3 +312,28 @@ for(let dia of dias){
 // O código acima imprime todos os dias da semana dentro da lista "dias".
 
 // Caso trabalhe com índices ou múltiplas posições da lista, utilize apenas o FOR.
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+// Loops - While e Do while
+// Enquanto (while) a condição for True, executa o código
+
+let num5 = 1;
+while(num5 < 10){
+    console.log("Valor: " + num5);
+    num5 = num5 + 2;
+}
+// O código acima imprime os números de 2 em 2, iniciando no número 1 e parando no 10, ex: 1, 3, 5, 7, 9
+
+// Do while - Similar ao while, o do while executa um trecho de código e depois testa se o executará novamente
+
+let num6 = 1;
+
+do{
+    console.log(num6);
+    num6++;
+}
+while(num6 < 10);
+// O código acima imprime os números de 1 até 9
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------- //

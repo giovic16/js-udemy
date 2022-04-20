@@ -266,3 +266,36 @@ switch (codigo) {
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------- //
 
+// Loops - For
+// O for é um comando que executa X vezes uma ação seguindo a forma como foi definido para ele fazê-la 
+for(let i = 0; i < 10; i++){ // Imprime no console os números de 0 a 9
+    console.log(i);
+}
+
+// A instrução de execução do for é dividida em 3 partes separadas por ponto e virgula
+// 1  - A instrução ocorrerá quando o for iniciar. Normalmente é a criação de uma variável de controle 
+// for(|let i = 0;|)
+
+// 2 - A condição para encerrar o for. Neste caso, ele executará enquanto i for menor que 10
+// for(let i = 0; |i < 10;|)
+// Caso essa condição nunca se torne "false", teremos um loop infinito
+
+// 3 - A instrução ocorrerá no final de cada repetição. Normalmente é um incremento de 1 variável
+// for(let i = 0; i < 10; |i++|) 
+// O i++ começará com o i tendo 0, depois 1, 2, 3...
+
+// Além de executar uma mesma instrução várias vezes. Ele é perfeito para ler vetores
+let bicho = ["cachorro", "gato", "galinha"];
+
+for(let i = 0; i < bicho.length; i++){
+    console.log(bicho[i]);
+}
+
+// Ou modificar todos os itens de um vetor
+let valores2 = [1,2,3,4,5];
+
+for(let i = 0; i < valores2.length; i++){
+    valores2[i] = valores2[i] * 2;
+    console.log(valores2[i]);
+}
+// O código acima imprime os números de 2 em 2, ex: 2, 4, 6, 8, 10...
